@@ -1,0 +1,8 @@
+Array
+(
+    [user_name] => pratham parmar
+    [user_mobile_num] => 9016078774
+    [parents_mobile_num] => 9925358877
+    [user_password] => pra7722
+)
+Hashed Password: $2y$10$eTv22ILPqznA8S1MfiKT5OuPH7At6RJniy/i3m6eBJ.OC4jEWVmN2
