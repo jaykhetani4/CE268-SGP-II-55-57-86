@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'splash_screen.dart';
+import 'dashboard.dart';
 import 'package:mudramitra/users/Authentication/login_page.dart';
-//import 'package:mudramitra/second_page.dart'; // Import SecondPage
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
@@ -14,23 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'MudraMitra', // Change to your app's title
+      title: 'MudraMitra',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: FutureBuilder(
-    builder: (context,dataSnapShot)
-    {
-      return LoginPage();
-      }, future: null,
-    ),
-      // initialRoute: '/',
-      // routes: {
-      //   '/': (context) => LoginPage(),
-       // '/second': (context) => SecondPage(),
-      // },
+      home: const SplashScreen(),
     );
   }
 }
